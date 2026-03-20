@@ -1,0 +1,19 @@
+//
+// Created by theownage on 20/03/2026.
+//
+
+#ifndef ARKANOID_CONFIG_H
+#define ARKANOID_CONFIG_H
+
+#define WINDOW_WIDTH 800
+#define WINDOW_HEIGHT 600
+#define TARGET_FPS 60
+
+#define PLAYER_WIDTH 75
+#define PLAYER_HEIGHT 15
+#define PLAYER_COLOR BLUE
+#define PLAYER_SPEED 500
+#define PLAYER_DEFAULT_Y_OFFSET 20
+#define PLAYER_UPPER_BOUND 500
+
+#endif //ARKANOID_CONFIG_H
