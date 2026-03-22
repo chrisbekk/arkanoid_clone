@@ -1,28 +1,20 @@
 #include <stdio.h>
 #include "raylib.h"
 #include "config.h"
-#include "player.h"
+#include "game.h"
+#include "tools.h"
 #include "utils.h"
-
-
 
 int main(void) {
 
     InitWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "Arkanoid Clone");
     SetTargetFPS(TARGET_FPS);
-    Player player;
-    initPlayer(&player);
+    Game game;
+    InitGame(&game);
     while (!WindowShouldClose())
     {
-        // INPUT + UPDATE
-        updatePlayer(&player);
-        // DRAW
-
-        BeginDrawing();
-        ClearBackground(RAYWHITE);
-        drawPlayerBoundary();
-        drawPlayer(&player);
-        EndDrawing();
+        UpdateGame(&game);
+        DrawGame(&game);
     }
 
     CloseWindow();

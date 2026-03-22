@@ -8,5 +8,13 @@ add_executable(arkanoid main.c
         player.c
         utils.h
         utils.c
-        config.h)
+        config.h
+        tools.h
+        tools.c
+        game.c
+        game.h
+        ball.h
+        ball.c
+        menu.h
+        menu.c)
 target_link_libraries(arkanoid raylib)
