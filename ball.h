@@ -4,13 +4,16 @@
 
 #ifndef ARKANOID_BALL_H
 #define ARKANOID_BALL_H
-
+#include "raylib.h"
 typedef struct {
-    int x;
-    int y;
+    Vector2 position;
+    float radius;
     float speed;
+    Color color;
 } Ball;
 
-void initBall(Ball *ball);
+void InitBall(Ball *ball);
+void UpdateBall(Ball *ball);
+void DrawBall(Ball *ball);
 
 #endif //ARKANOID_BALL_H

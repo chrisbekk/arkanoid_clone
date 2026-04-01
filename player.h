@@ -12,8 +12,8 @@ typedef struct {
     Color color;
 } Player;
 
-void initPlayer(Player *player);
-void updatePlayer(Player *player);
-void drawPlayer(Player *player);
+void InitPlayer(Player *player);
+void UpdatePlayer(Player *player);
+void DrawPlayer(Player *player);
 
 #endif //ARKANOID_PLAYER_H

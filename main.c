@@ -2,8 +2,7 @@
 #include "raylib.h"
 #include "config.h"
 #include "game.h"
-#include "tools.h"
-#include "utils.h"
+
 
 int main(void) {
 

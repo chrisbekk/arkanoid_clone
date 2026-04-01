@@ -1,13 +1,8 @@
-//
-// Created by theownage on 21/03/2026.
-//
-
 #ifndef ARKANOID_MENU_H
 #define ARKANOID_MENU_H
 
-
 #include "raylib.h"
-struct Game;
+
 #define MAX_BUTTONS 10
 
 typedef struct {
@@ -18,13 +13,13 @@ typedef struct {
 
 typedef struct {
     int selectedMenuItem;
+    int menuButtonsCount;
     MenuButton buttons[MAX_BUTTONS];
 } Menu;
 
-
+typedef struct Game Game;
 
 void InitMenu(Menu *menu);
 void DrawMenu(Menu *menu);
-void UpdateMenu(struct Game *game);
-
+void UpdateMenu(Game *game);
 #endif //ARKANOID_MENU_H

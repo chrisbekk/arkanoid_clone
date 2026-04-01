@@ -16,5 +16,11 @@ add_executable(arkanoid main.c
         ball.h
         ball.c
         menu.h
-        menu.c)
+        menu.c
+        level.h
+        level.c
+        block.h
+        block.c
+        collision.h
+        collision.c)
 target_link_libraries(arkanoid raylib)

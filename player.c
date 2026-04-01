@@ -9,7 +9,7 @@
 
 
 
-void initPlayer(Player *player) {
+void InitPlayer(Player *player) {
     unsigned int playerStartingX = (WINDOW_WIDTH / 2) - (PLAYER_WIDTH / 2);
     player->rect.x = playerStartingX;
     player->rect.y = WINDOW_HEIGHT - PLAYER_DEFAULT_Y_OFFSET;
@@ -19,7 +19,7 @@ void initPlayer(Player *player) {
     player->color = PLAYER_COLOR;
 }
 
-void updatePlayer(Player *player) {
+void UpdatePlayer(Player *player) {
     float dt = GetFrameTime();
     player->speed = PLAYER_SPEED;
 
@@ -55,6 +55,6 @@ void updatePlayer(Player *player) {
 
 }
 
-void drawPlayer(Player *player) {
+void DrawPlayer(Player *player) {
     DrawRectangleRec(player->rect, player->color);
 }
