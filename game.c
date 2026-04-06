@@ -1,7 +1,7 @@
 #include "game.h"
 #include "player.h"
 #include "ball.h"
-#include "collision.h"
+#include "checkCollisions.h"
 #include "menu.h"
 #include "level.h"
 #include "raylib.h"
@@ -23,7 +23,7 @@ void UpdateGame(Game *game) {
         case STATE_PLAYING:
             UpdatePlayer(&game->player);
             UpdateBall(&game->ball);
-            checkCollision(game);
+            CheckBallPlayerCollision(&game->ball, &game->player);
             break;
         default:
             break;

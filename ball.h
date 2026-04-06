@@ -7,8 +7,8 @@
 #include "raylib.h"
 typedef struct {
     Vector2 position;
+    Vector2 velocity;
     float radius;
-    float speed;
     Color color;
 } Ball;
 

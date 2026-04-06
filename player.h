@@ -5,10 +5,13 @@
 #ifndef ARKANOID_PLAYER_H
 #define ARKANOID_PLAYER_H
 #include <raylib.h>
+#include "config.h"
 
 typedef struct {
-    Rectangle rect;
-    float speed;
+    Vector2 position;
+    Vector2 velocity;
+    int width;
+    int height;
     Color color;
 } Player;
 

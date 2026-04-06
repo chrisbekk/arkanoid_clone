@@ -21,6 +21,7 @@ add_executable(arkanoid main.c
         level.c
         block.h
         block.c
-        collision.h
-        collision.c)
+        checkCollisions.c
+        checkCollisions.h
+)
 target_link_libraries(arkanoid raylib)
