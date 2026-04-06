@@ -7,8 +7,6 @@
 #include "raylib.h"
 
 
-
-
 void InitPlayer(Player *player) {
     unsigned int playerStartingX = (WINDOW_WIDTH / 2) - (PLAYER_WIDTH / 2);
     player->rect.x = playerStartingX;
